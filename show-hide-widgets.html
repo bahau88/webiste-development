@@ -1,0 +1,100 @@
+
+<b:widget id= 'HTML11' locked='false' title='Popular posts' type='HTML'>
+  <b:includable id='main'>
+    <b:if cond='data:blog.pageType != "Page_type"'>
+      Widget code
+    </b:if>
+  </b:includable>
+</b:widget>
+
+
+
+
+To Show Blogger Widget only in Homepage
+<b:widget id= 'HTML11' locked='false' title='Popular posts' type='HTML'>
+  <b:includable id='main'>
+    <b:if cond='data:blog.pageType == data:blog.homepageUrl'>
+      Widget code
+    </b:if>
+  </b:includable>
+</b:widget>
+To Hide Blogger Widget only in Homepage
+<b:widget id= 'HTML11' locked='false' title='Popular posts' type='HTML'>
+  <b:includable id='main'>
+    <b:if cond='data:blog.pageType != data:blog.homepageUrl'>
+      Widget code
+    </b:if>
+  </b:includable>
+</b:widget>
+To Show a Widget only in Post Pages
+<b:widget id= 'HTML11' locked='false' title='Popular posts' type='HTML'>
+  <b:includable id='main'>
+    <b:if cond='data:blog.pageType == "item"'>
+      Widget code
+    </b:if>
+  </b:includable>
+</b:widget>
+To Hide a Widget only in Post Pages
+<b:widget id= 'HTML11' locked='false' title='Popular posts' type='HTML'>
+  <b:includable id='main'>
+    <b:if cond='data:blog.pageType != "item"'>
+      Widget code
+    </b:if>
+  </b:includable>
+</b:widget>
+To Show a Widget only in a Specific Page or post
+<b:widget id= 'HTML11' locked='false' title='Popular posts' type='HTML'>
+  <b:includable id='main'>
+    <b:if cond='data:blog.pageType == "URL of the page or post"'>
+      Widget code
+    </b:if>
+  </b:includable>
+</b:widget>
+Replace URL of the page or post(which is highlighted with Blue color) with URL of the page or post where you want to show the widget.
+
+Also Read:  How to Protect Your Website or Blog Using These Tools
+To hide a Widget only in a specific Page or post
+<b:widget id= 'HTML11' locked='false' title='Popular posts' type='HTML'>
+  <b:includable id='main'>
+    <b:if cond='data:blog.pageType != "URL of the page or post"'>
+      Widget code
+    </b:if>
+  </b:includable>
+</b:widget>
+Replace URL of the page or post(which is highlighted with Blue color) with URL of the page or post where you want to show the widget.
+
+
+To Show a Widget only in Static Pages
+<b:widget id= 'HTML11' locked='false' title='Popular posts' type='HTML'>
+  <b:includable id='main'>
+    <b:if cond='data:blog.pageType == "static_page"'>
+      Widget code
+    </b:if>
+  </b:includable>
+</b:widget>
+To Hide a Widget only in Static Pages
+<b:widget id= 'HTML11' locked='false' title='Popular posts' type='HTML'>
+  <b:includable id='main'>
+    <b:if cond='data:blog.pageType != "static_page"'>
+      Widget code
+    </b:if>
+  </b:includable>
+</b:widget>
+To Show a Widget only in Archive Pages
+
+<b:widget id= 'HTML11' locked='false' title='Popular posts' type='HTML'>
+  <b:includable id='main'>
+    <b:if cond='data:blog.pageType == "archive"'>
+      Widget code
+    </b:if>
+  </b:includable>
+</b:widget>
+To hide a Widget only in Archive Pages
+
+<b:widget id= 'HTML11' locked='false' title='Popular posts' type='HTML'>
+  <b:includable id='main'>
+    <b:if cond='data:blog.pageType != "archive"'>
+      Widget code
+    </b:if>
+  </b:includable>
+</b:widget>
