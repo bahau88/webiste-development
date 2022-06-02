@@ -1,0 +1,16 @@
+<b:include data='post' name='post'/>
+
+
+replace with:
+
+<b:if cond='data:blog.url == data:blog.homepageUrl'>
+<b:loop values='data:post.labels' var='label'>
+        <b:if cond='data:label.isLast == "true"'>
+            <b:if cond='data:label.name != "add label here"'>
+                <b:include data='post' name='post' />
+            </b:if>
+        </b:if>
+    </b:loop>
+<b:else/>
+    <b:include data='post' name='post' />
+</b:if>
